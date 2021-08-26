@@ -1,0 +1,262 @@
+@charset "utf-8";
+
+:root {
+  --main: #783FF9;
+  --sub1: #5118D3;
+  --sub2: #9364DD;
+  --sub3: #AA87DD;
+  --sub3Alpha: #a987dd80;
+  --title: #191919;
+  --text: #606060;
+  --deepGray: #B2B2B2;
+  --gray: #CFCFCF;
+  --whiteGray: #E1E1E1;
+  --red: #F93F3F;
+}
+
+/* btn Container */
+.btnContainer {
+  width: 100%;
+  margin: 30px auto;
+  overflow: hidden;
+}
+.btnContainer .writeBtn {
+  width: 100px; height: 40px;
+}
+.btnContainer .search {
+  float: right;
+}
+.btnContainer .search .input {
+  width: 200px; height: 40px;
+  margin: 0; margin-right: -4px;
+  border-radius: 10px 0 0 10px;
+}
+.btnContainer .search .btn {
+  width: 50px; height: 40px;
+  margin: 0;
+  border-radius: 0 10px 10px 0;
+}
+.btnContainer .left {
+  float: left;
+  margin-right: 10px;
+}
+.btnContainer .right {
+  float: right;
+}
+
+/* board List - basic */
+.boardList table {
+  width: 100%;
+}
+.boardList table thead {
+  height: 45px;
+  background-color: #f5efff;
+  text-align: center;
+}
+.boardList table .no, .boardList table .writer,
+.boardList table .date, .boardList table .count {
+  text-align: center;
+}
+.boardList table tbody tr {
+  height: 55px;
+  border-bottom: 1px solid var(--whiteGray);
+}
+.boardList table tbody tr a:hover {
+  color: inherit;
+  text-decoration: underline;
+}
+
+/* board List - images */
+.boardList .imagesList {
+  width: 100%;
+  margin: 0 auto;
+}
+.boardList .imagesList li a {
+  display: block;
+  float: left;
+  width: calc(33.3333% - 40px);
+  margin: 0 20px;
+  overflow: hidden;
+}
+.boardList .imagesList li:nth-child(4) a,
+.boardList .imagesList li:nth-child(5) a,
+.boardList .imagesList li:nth-child(6) a {
+  margin: 20px;
+}
+.boardList .imagesList li a .thumContainer {
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+}
+.boardList .imagesList li a .thumContainer .img {
+  display: block;
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  transition: all 0.4s;
+}
+.boardList .imagesList li a:hover {
+  color: inherit;
+}
+.boardList .imagesList li a:hover .thumContainer .img {
+  transform: scale(1.1);
+}
+.boardList .imagesList li a p.title {
+  display: inline-block;
+  margin-top: 15px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.boardList .imagesList li a:hover p.title {
+  text-decoration: underline;
+}
+
+/* paging */
+.boardList .paging {
+  float: right;
+  margin: 50px auto;
+}
+.boardList .paging li {
+  float: left;
+  margin: 0 2.5px;
+}
+.boardList .paging li a {
+  display: block;
+  padding: 0 3px;
+}
+.boardList .paging li a.active {
+  color: var(--main);
+}
+.boardList .paging li a:hover {
+  text-decoration: underline;
+}
+
+/* view css */
+.viewHeader h3.title {
+  padding-bottom: 15px;
+  font-size: 20px;
+  border-bottom: 1px solid var(--whiteGray);
+}
+.viewHeader .postInfo {
+  font-size: 14px;
+  color: var(--deepGray);
+}
+.viewHeader .postInfo .editBtn {
+  float: right;
+}
+.viewHeader .postInfo .editBtn .btn {
+  padding: 0 3px;
+  color: var(--deepGray);
+}
+.viewHeader .postInfo .editBtn .btn:hover {
+  text-decoration: underline;
+}
+.viewBody {
+  margin: 50px auto;
+  border-bottom: 1px solid var(--whiteGray);
+  overflow: hidden;
+}
+.viewBody .viewContents {
+  margin-bottom: 25px;
+}
+.viewBody .file {
+  float: right;
+  text-align: right;
+}
+.viewBody .file p.title {
+  margin: 0;
+  color: var(--deepGray);
+}
+.viewBody .file .fileList li a {
+  display: block;
+  margin: 2.5px auto;
+  font-size: 14px;
+  color: var(--gray);
+}
+.viewBody .file .fileList li a:hover {
+  text-decoration: underline;
+}
+.viewComment p.title {
+  font-size: 18px;
+  color: var(--title);
+  font-weight: bold;
+}
+.viewComment .commentList {
+  width: 100%;
+  overflow: hidden;
+}
+.viewComment .commentList li {
+  position: relative;
+  float: left;
+  width: 100%;
+  margin: 0 auto;
+  padding: 15px 0;
+  border-bottom: 1px solid var(--whiteGray);
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.viewComment .commentList li:last-child {
+  border-bottom: 0;
+}
+.viewComment .commentList li .userId {
+  float: left;
+  margin-right: 10px;
+  color: var(--title);
+}
+.viewComment .commentList li .date {
+  float: left;
+  font-size: 14px;
+  color: var(--deepGray);
+}
+.viewComment .commentList li .editBtn {
+  position: absolute;
+  right: 0; top: 10px;
+}
+.viewComment .commentList li .editBtn * {
+  padding: 0 1px;
+  color: var(--deepGray);
+  font-size: 14px;
+}
+.viewComment .commentList li .editBtn .btn:hover {
+  text-decoration: underline;
+}
+.viewComment .commentList li .commentContents {
+  width: 100%;
+  overflow: hidden;
+}
+.viewComment .commentList li .commentContents p {
+  margin: 10px auto;
+}
+.viewComment .commentList li .reply {
+  padding-left: 15px;
+  box-sizing: border-box;
+}
+.viewComment .comment p.title {
+  font-size: 14px;
+  margin: 0 auto 5px;
+}
+.viewComment .comment textarea {
+  float: left;
+  width: calc(90% - 1px);  height: 80px;
+  padding: 5px;
+  font-size: 14px;
+  border: 1px solid var(--gray);
+  box-sizing: border-box;
+}
+.viewComment .comment textarea:focus {
+  border: 1px solid var(--main);
+}
+.viewComment .comment .btn {
+  float: left;
+  width: 10%; height: 80px;
+  border-radius: 0;
+  font-size: 14px;
+}
+.viewComment .comment label {
+  margin: 7px auto;
+  font-size: 15px;
+}
+.viewComment .comment label input {
+  vertical-align: middle;
+}

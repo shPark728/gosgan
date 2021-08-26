@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+
+<head th:fragment="configFragment">
+	<meta charset="UTF-8" />
+	<!-- 공통으로 쓰이는 css / js 파일을 넣는다.-->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+	<link rel="stylesheet" th:href="@{resources/css/webfonts.css}">
+	<link rel="stylesheet" th:href="@{resources/css/base/bootstrap.min.css}">
+	
+	<!-- 사용자 CSS -->
+	<th:block layout:fragment="css"></th:block>
+	<link rel="stylesheet" th:href="@{resources/css/board.css}">
+	<link rel="stylesheet" th:href="@{resources/css/style.css}">
+	<!-- /사용자 CSS -->
+	
+	<!-- Bootstrap js -->
+	<!-- jQuery library -->
+	<script
+		src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<!-- Popper JS -->
+	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<!-- Latest compiled JavaScript -->
+	<script th:href="@{resources/js/base/bootstrap.bundle.js}"></script>
+	<!-- /Bootstrap js -->
+	<!-- 사용자 script 사용할 곳에서 <th:block layout:fragment="script"> </th:block>로 추가해서 사용 -->
+	<th:block layout:fragment="script"></th:block>
+	<!-- /사용자 script -->
+</head>
+
+</html>

@@ -1,0 +1,108 @@
+@charset "utf-8";
+
+/*
+@font-face {
+	font-family: 'NanumGothic';
+	src: url('../webfonts/NanumGothic.eot');
+	src: url('../webfonts/NanumGothic.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Poppins';
+	src: url('../webfonts/Poppins.eot');
+	src: url('../webfonts/Poppins.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+*/
+
+/* AppleSDGothicNeo */
+@font-face {
+	font-family: 'AppleSDGothicNeo';
+	src: url('../webfonts/AppleSDGothicNeoUL.eot');
+	src: url('../webfonts/AppleSDGothicNeoUL.woff') format('woff');
+	font-weight: 300;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'AppleSDGothicNeo';
+	src: url('../webfonts/AppleSDGothicNeoR.eot');
+	src: url('../webfonts/AppleSDGothicNeoR.woff') format('woff');
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'AppleSDGothicNeo';
+	src: url('../webfonts/AppleSDGothicNeoSB.eot');
+	src: url('../webfonts/AppleSDGothicNeoSB.woff') format('woff');
+	font-weight: 500;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'AppleSDGothicNeo';
+	src: url('../webfonts/AppleSDGothicNeoB.eot');
+	src: url('../webfonts/AppleSDGothicNeoB.woff') format('woff');
+	font-weight: 600;
+	font-style: normal;
+}
+
+/* NotoSans */
+@font-face {
+	font-family: 'NotoSans';
+	src: url('../webfonts/NotoSansL.eot');
+	src: url('../webfonts/NotoSansL.woff') format('woff');
+	font-weight: 300;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'NotoSans';
+	src: url('../webfonts/NotoSansR.eot');
+	src: url('../webfonts/NotoSansR.woff') format('woff');
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'NotoSans';
+	src: url('../webfonts/NotoSansM.eot');
+	src: url('../webfonts/NotoSansM.woff') format('woff');
+	font-weight: 500;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'NotoSans';
+	src: url('../webfonts/NotoSansB.eot');
+	src: url('../webfonts/NotoSansB.woff') format('woff');
+	font-weight: 600;
+	font-style: normal;
+}
+
+/* NotoSansKR */
+@font-face {
+	font-family: 'NotoSansKR';
+	src: url('../webfonts/NotoSansKRL.eot');
+	src: url('../webfonts/NotoSansKRL.woff') format('woff');
+	font-weight: 300;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'NotoSansKR';
+	src: url('../webfonts/NotoSansKRR.eot');
+	src: url('../webfonts/NotoSansKRR.woff') format('woff');
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'NotoSansKR';
+	src: url('../webfonts/NotoSansKRM.eot');
+	src: url('../webfonts/NotoSansKRM.woff') format('woff');
+	font-weight: 500;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'NotoSansKR';
+	src: url('../webfonts/NotoSansKRB.eot');
+	src: url('../webfonts/NotoSansKRB.woff') format('woff');
+	font-weight: 600;
+	font-style: normal;
+}

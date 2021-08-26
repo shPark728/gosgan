@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="widtr=device-widtr, initial-scale=1.0">
+  <title>Board.com</title>
+  <link rel="stylesheet" href="../css/base/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/webfonts.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/board.css">
+  <script src="../js/base/bootstrap.bundle.js"></script>
+</head>
+
+<body>
+  <div id="wrap">
+
+    <!-- nav -->
+    <nav id="nav">
+      <a href="#" class="logo"><img src="../images/logo.png" alt="logo"></a>
+      <ul class="menu">
+        <li><a href="#"><i class="bi bi-justify"></i> 전체글</a></li>
+        <li><a href="#"><i class="bi bi-justify"></i> 자유게시판</a></li>
+        <li><a href="#"><i class="bi bi-chat-square-text"></i> 질문과 답변</a></li>
+        <li><a href="#"><i class="bi bi-justify"></i> 맛집 후기</a></li>
+        <li><a href="#"><i class="bi bi-image"></i> 생활 정보</a></li>
+        <li><a href="#"><i class="bi bi-eye-slash-fill"></i> 숨김 글</a></li>
+        <li><a href="#"><i class="bi bi-gear"></i> 설정</a></li>
+      </ul>
+    </nav>
+
+    <!-- header -->
+    <header id="header">
+      <div class="userInfo">
+        <a href="#" class="profile"><i class="bi bi-person-circle"></i> 산토미</a>
+        <button class="btn grayBtn logout">로그아웃</button>
+      </div>
+    </header>
+
+    <!-- contents -->
+    <div id="contents">
+      <div class="innerContents">
+        <h2 class="title">전체 글</h2>
+
+        <!-- 버튼 영역 -->
+        <div class="btnContainer">
+          <button class="btn mainBtn writeBtn">글쓰기</button>
+          <div class="search">
+            <input type="text" class="input" size="4" placeholder="검색">
+            <button type="button" class="btn mainBtn"><i class="bi bi-search"></i></button>
+          </div>
+        </div>
+
+        <!-- 글 목록 -->
+        <div class="boardList">
+          <ul class="imagesList">
+            <li><a href="#">
+              <div class="thumContainer">
+                <img src="../images/boardThum1.jpg" alt="boardThum" class="img">
+              </div>
+              <input type="checkbox">
+              <p class="title">당신이 비밀번호를 변경해야하는 이유 10 <span class="commentCount">[3]</span></p>
+            </a></li>
+            <li><a href="#">
+              <div class="thumContainer">
+                <img src="../images/boardThum2.jpg" alt="boardThum" class="img">
+              </div>
+              <input type="checkbox">
+              <p class="title">노오븐 디저트 도넛 만들기 <span class="commentCount">[3]</span></p>
+            </a></li>
+            <li><a href="#">
+              <div class="thumContainer">
+                <img src="../images/boardThum3.jpg" alt="boardThum" class="img">
+              </div>
+              <input type="checkbox">
+              <p class="title">겨울바다 여행가기전에 챙겨야 할 것들 <span class="commentCount">[3]</span></p>
+            </a></li>
+            <li><a href="#">
+              <div class="thumContainer">
+                <img src="../images/boardThum4.jpg" alt="boardThum" class="img">
+              </div>
+              <input type="checkbox">
+              <p class="title">집에서 새싹 가꾸기 홈 가드닝 <span class="commentCount">[3]</span></p>
+            </a></li>
+            <li><a href="#">
+              <div class="thumContainer">
+                <img src="../images/boardThum5.jpg" alt="boardThum" class="img">
+              </div>
+              <input type="checkbox">
+              <p class="title">세계 10대 슈퍼푸드 블루베리 효능 <span class="commentCount">[3]</span></p>
+            </a></li>
+            <li><a href="#">
+              <div class="thumContainer">
+                <img src="../images/boardThum6.jpg" alt="boardThum" class="img">
+              </div>
+              <input type="checkbox">
+              <p class="title">봄 향기 물씬~ 수국보러 수목원가자 <span class="commentCount">[3]</span></p>
+            </a></li>
+            <li><a href="#">
+              <div class="thumContainer">
+                <img src="../images/boardThum7.jpg" alt="boardThum" class="img">
+              </div>
+              <input type="checkbox">
+              <p class="title">프랑스 마카롱보다 맛있는 K-마카롱만들기 <span class="commentCount">[3]</span></p>
+            </a></li>
+            <li><a href="#">
+              <div class="thumContainer">
+                <img src="../images/boardThum8.jpg" alt="boardThum" class="img">
+              </div>
+              <input type="checkbox">
+              <p class="title">생일케이크는 ???다! <span class="commentCount">[3]</span></p>
+            </a></li>
+            <li><a href="#">
+              <div class="thumContainer">
+                <img src="../images/boardThum9.jpg" alt="boardThum" class="img">
+              </div>
+              <input type="checkbox">
+              <p class="title">그릭요거트와 잘 어울리는 과일, 효능 알기 <span class="commentCount">[3]</span></p>
+            </a></li>
+          </ul>
+          <ul class="paging">
+            <li class="page prev"><a href="#"><i class="bi bi-chevron-double-left"></i></a></li>
+            <li class="page prev"><a href="#"><i class="bi bi-chevron-left"></i></a></li>
+            <li class="page pageNum"><a href="#" class="active">1</a></li>
+            <li class="page pageNum"><a href="#">2</a></li>
+            <li class="page pageNum"><a href="#">3</a></li>
+            <li class="page pageNum"><a href="#">4</a></li>
+            <li class="page pageNum"><a href="#">5</a></li>
+            <li class="page pageNum"><a href="#">6</a></li>
+            <li class="page pageNum"><a href="#">7</a></li>
+            <li class="page pageNum"><a href="#">8</a></li>
+            <li class="page pageNum"><a href="#">9</a></li>
+            <li class="page pageNum"><a href="#">10</a></li>
+            <li class="page next"><a href="#"><i class="bi bi-chevron-right"></i></a></li>
+            <li class="page next"><a href="#"><i class="bi bi-chevron-double-right"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>
